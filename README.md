@@ -1,4 +1,4 @@
-# Project-Euler-answers-in-python
+# Project Euler answers in python
 Hello folks, Are you a beginner in Python and trying to solve basic functions to improve your python knowledge and try testing yourself with Hackerrank or some other platforms to create a basic portfolio? then this repo might help you in right sense.
 
 Questions taken from Project Euler Archives and addressed the piece of codes in Python.
