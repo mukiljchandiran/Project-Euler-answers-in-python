@@ -93,10 +93,26 @@ def largest_palindrome(max, min):
 
 ```python
 
-i = 1
-for n in range(1,21):
-    while (i % 11 != 0) or (i % 12 != 0) or (i % 13 != 0) or (i % 14 != 0) or (i % 15 != 0) or (i % 16 != 0) or (i % 17 != 0) or (i % 18 != 0) or (i % 19 != 0):
-        i += 1
-print(i)
+def smallest_div_1_to_20():
+    for i in range(2520,999999999,2520):
+        if all(i % n == 0 for n in range(11,21)):
+            return i
+
+```
+
+**#Q6 - The sum of the squares of the first ten natural numbers is, 1^2 + 2^2 + ... + 10^2 = 385
+The square of the sum of the first ten natural numbers is, (1 + 2 + ... + 10)^2 = 55^2 = 3025
+The difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.**
+
+```python
+
+def diff_of_sum_of_squares(n):
+    sq = []
+    sq_of_sum = []
+    for i in range(1,n+1):
+        sq.append(i**2)
+        sq_of_sum.append(i)
+    return ((sum(sq_of_sum)**2) - sum(sq))
 
 ```
