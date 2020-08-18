@@ -116,3 +116,23 @@ def diff_of_sum_of_squares(n):
     return ((sum(sq_of_sum)**2) - sum(sq))
 
 ```
+
+**#Q7 - By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10001 prime number?**
+
+```python
+
+def n_prime(n):
+    prime_list = []
+    for i in range(2,99999999999):
+        if len(prime_list)<=n:
+            for j in range(2,i):
+                if i%j == 0:
+                    break
+            else:
+                prime_list.append(i)
+        else:
+            break
+    return prime_list[n-1]
+
+```
+
