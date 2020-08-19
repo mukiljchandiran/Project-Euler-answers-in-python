@@ -138,3 +138,21 @@ def n_prime(n):
 
 ```
 
+### **Q8 - The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832. Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?**
+
+```python
+
+d=[]
+for i in range(0,len(a)):
+    b = 1
+    for m in range(i,i+13):
+        e = int(a[m])
+        b = int(b * e)
+    while b > 10000000000:
+        print(b)
+        print(e)
+        b = 1
+
+```
+
+
