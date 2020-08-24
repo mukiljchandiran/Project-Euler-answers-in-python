@@ -102,7 +102,7 @@ def smallest_div_1_to_20():
 
 ```
 
-### **Q6 - The sum of the squares of the first ten natural numbers is, 1^2 + 2^2 + ... + 10^2 = 385 **</br>
+### **Q6 - The sum of the squares of the first ten natural numbers is, 1^2 + 2^2 + ... + 10^2 = 385**</br>
 ### **The square of the sum of the first ten natural numbers is, (1 + 2 + ... + 10)^2 = 55^2 = 3025**</br>
 ### **The difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.**</br>
 ### **Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.**
@@ -168,5 +168,22 @@ def products_of_adjacents(num_of_adj):
     return final_13_values[final_13_dot.index(max(final_13_dot))]
 
 ```
+### **Q9 - A Pythagorean triplet is a set of three natural numbers, a < b < c, for which, a^2 + b^2 = c^2. For example, 32 + 42 = 9 + 16 = 25 = 52.**
+### **There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.**
 
+```python
+
+def Pythagorean_triplet(product_value):
+    for a in range(1, product_value + 1):
+        for b in range(a + 1, product_value + 1):
+            c = product_value - a - b
+            if a ^ 2 + b ^ 2 == c ^ 2:
+                n = (a * b * c)
+                print("The value of a is {}".format(a))
+                print("The value of b is {}".format(b))
+                print("The value of c is {}".format(c))
+    return n 
+
+
+```
 
