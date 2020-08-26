@@ -187,3 +187,18 @@ def Pythagorean_triplet(product_value):
 
 ```
 
+### **Q10 - The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17. Find the sum of all the primes below two million.**
+
+```python
+
+def Sum_of_primes(a):
+    prime_sums = 0
+    for num in range(2,a + 1):
+        for i in range(2,num):
+            if (num % i) == 0:
+                break
+        else:
+            prime_sums = prime_sums + num
+    return prime_sums
+
+```
