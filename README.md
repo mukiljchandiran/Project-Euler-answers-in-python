@@ -485,3 +485,17 @@ def grid_value(a):
     possible_routes = (int(factorial(2*a) / pow(factorial(a),2)))
 
 ```
+
+### Q16 - 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+#### What is the sum of the digits of the number 2^1000?
+
+```python
+
+def sum_of_digits(a):
+    base_value = 2**a
+    sum_value = 0
+    for i in str(base_value):
+        sum_value += int(i)
+    return sum_value
+
+```
